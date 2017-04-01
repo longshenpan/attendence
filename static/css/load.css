@@ -1,0 +1,49 @@
+.load{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	font-size: .5rem;
+	background-color: rgba(128,128,128,0.5);
+}
+.load .circleGroup{
+	position: absolute;
+	// width: 90px;
+	// height: 90px;
+	padding: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(128,128,128,0.8);
+}
+.load .circleGroup .circle{
+	display: inline-block;
+	// padding: 10px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: white;
+	opacity: 1;
+	-webkit-animation-name: flashAnimation;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flashAnimation{
+	0%{
+		opacity: 0.5;
+	}
+	75%{
+		opacity: 1
+	}
+	100%{
+		opacity: 0.5;
+	}
+}
+
+.delay-twos{
+	-webkit-animation-delay: -0.5s;
+}
+.delay-one{
+	-webkit-animation-delay: -0.75s;
+}
